@@ -6,7 +6,7 @@ body {
 	font-size:35px;
 }
 
-img {
+#links img {
 	width:90px;
 	height:90px;
 	padding:5px;
@@ -14,4 +14,9 @@ img {
 
 #name {
 	font-size:70px;
+}
+
+#me img {
+	width:200px;
+	height:200px;
 }
