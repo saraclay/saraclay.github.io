@@ -2,16 +2,51 @@
 <head>
 	<title>Sara Clayton</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="styles/animations.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 
+<script>
+	$(window).scroll(function() {
+		$('#links').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$('#links').onClick(function() {
+		$(this).addClass("fadeIn");
+	});
+</script>
+
+<body>
+
 <center>
-<h2>Senior at USC</h2>
+	<div id="name">
+		SARA CLAYTON
+	</div>
+Senior at USC.
 <br>
 Starting at Microsoft in the fall.
 <br><br>
-<a href="http://www.twitter.com/saraclay15"><img src="img/twitter.png"></a>
-<a href="linkedin.com/in/saraclay"><img src="img/linkedin.png"></a>
-<a href="mailto:sclayton11@gmail.com"><img src="img/mail.png"></a>
+<div id="links" class="fadeIn">
+<a href="http://www.twitter.com/saraclay15" target="_blank"><img src="img/twitter.png"></a>
+<a href="http://www.linkedin.com/in/saraclay" target="_blank"><img src="img/linkedin.png"></a>
+<a href="http://www.behance.net/saraclay" target="_blank"><img src="img/behance.png"></a>
+<a href="http://www.techvolo.wordpress.com" target="_blank"><img src="img/wp.png"></a>
+<a href="mailto:sclayton11@gmail.com" target="_blank"><img src="img/mail.png"></a>
+</div>
 </center>
 
+</body>
+
+</html>
