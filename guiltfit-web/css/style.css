@@ -1,0 +1,300 @@
+/*BODY*/
+
+body {
+	background-color:#FFF;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	color:#3E404B;
+}
+
+/*NAV BAR*/
+
+#nav {
+	background-color:#E6E8E6;
+	color:#fff;
+	opacity:0.7;
+	position:fixed;
+	padding-top:1%;
+	width:100%;
+	height:5%;
+	z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#nav .text {
+	text-align:center;
+}
+
+#nav .text a {
+	padding-left:3%;
+	padding-right:3%;
+	text-decoration:none;
+	color:#3E404B;
+}
+
+#nav .text a:hover {
+	color:#9FB8AD;
+};
+
+hr {
+	opacity:0.7;
+}
+
+/*Button*/
+a.button {
+  display: block;
+  position: relative;
+  width: 200px;
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size:30px;
+  text-align: center;
+  text-decoration:none;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+/*Splash Button*/
+.btnBlueGreen{
+	background:#3E404B;
+}
+
+.btnFade.btnBlueGreen:hover {
+  background: #9FB8AD;
+}
+
+/*Circle Button*/
+.round-button {
+	width:15%;
+	font-size:30px;
+	text-align:center;
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #cfdcec;
+    overflow:hidden;
+    background: #7BB79E; 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+	background:#61B793;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	margin-top:-0.5em;
+	text-align:center;
+	color:#e2eaf3;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+/*Chart Stuff*/
+
+
+/*Header Stuff*/
+h1 {
+	font-size:120px;
+	text-align:center;
+	line-height:10px;
+	color:#fff;
+}
+
+h4 {
+	font-size:40px;
+	line-height:10px;
+	text-align:center;
+	color:#fff;
+}
+
+/*GENERAL CONTENT*/
+
+#object {
+	visibility: hidden;
+	font-color:#fff;
+}
+
+#content {
+	padding-top:8%;
+}
+
+.tagline {
+	text-align:center;
+	font-size:35px;
+	padding-bottom:3%;
+	color:#fff;
+}
+
+.down-arrow {
+	padding-top:5%;
+	opacity:0.7;
+}
+
+.bar-code {
+    width: 175px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 25px;
+}
+
+.bar-code-color-first {
+	width: 175px;
+	background-color:#48A497;
+	font-size:12px;
+}
+
+.bar-code-color-second {
+	width: 175px;
+	background-color:rgba(73,188,170,0.4);
+	font-size:12px;
+}
+
+.bar-code-color-third {
+	width: 175px;
+	background-color:rgba(47,76,61,0.4);
+	font-size:12px;
+}
+
+/*Video Background*/
+#video-screen {
+	height:400px;
+	width:350px;
+	z-index:-1;
+	display:block;
+
+}
+
+#player {
+	height:300px;
+	width:250px;
+	z-index:3;
+	display:block;
+}
+
+/* Pulse */
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse:hover, .pulse:focus, .pulse:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+/*ABOUT*/
+
+.blurb {
+	text-align:center;
+	font-size:35px;
+	padding-bottom:7%;
+}
+
+.pillars {
+	text-align:center;
+	font-size:35px;
+	padding-top:4%;
+	padding-bottom:7%;
+}
+
+#icon img {
+	padding-right:2%;
+}
+
+/*CONTACT*/
+.contact-title {
+	text-align:center;
+	font-size:35px;
+	padding-bottom:7%;
+}
+
+/**TEAM*/
+.team-content {
+	text-align:center;
+	font-size:35px;
+	padding-top:4%;
+	font-size:14px;
+}
+
+.team-content img {
+	padding-left:4%;
+	padding-right:4%;
+	padding-bottom:3%;
+}
+
+/*SOCIAL MEDIA*/
+footer {
+	padding-top:10px;
+	height:70px;
+} 
+
+.final-content {
+	text-align:center;
+	font-size:35px;
+	padding-top:4%;
+	padding-bottom:7%;
+}
+
+/*FOOTER*/
+
+.footer-links {
+	color:#3E404B;
+	width:100%;
+	margin:auto;
+}
+
+.footer-links a {
+	text-decoration:underline;
+	color:#3E404B;
+}
+
+.footer-links a:hover {
+	text-decoration:none;
+	color:#3E404B;
+}
+
