@@ -2,16 +2,23 @@ body {
   background-color:#3a3a3a;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  }
+@font-face {
+  font-family: '33535gillsansmt';
+  src: url('./33535gillsansmt.eot');
+  src: local('33535gillsansmt'), url('./33535gillsansmt.woff') format('woff'), url('./33535gillsansmt.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1416">Text with this font applied</p> */
+.fontsforweb_fontid_1416 {
+  font-family: '33535gillsansmt' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
 
 p, a {
   font-size:20px;
   margin:30px 0 0 0;
   color:#fff;
-  /*font-family: 'Lato', sans-serif;*/
-  font-family: 'Lato', sans-serif;
+  font-family: '33535gillsansmt' !important;
   text-align:center;
 }
 
