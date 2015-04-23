@@ -61,7 +61,7 @@ g.innerHTML=h+"</ul>"}else z(c);w=!1;0<t.length&&(F.fetch(t[0]),t.splice(0,1))}}
 var config1 = {
   "id": '583177619081797632',
   "domId": 'example1',
-  "maxTweets": 7,
+  "maxTweets": 10,
   "enableLinks": true
 };
 twitterFetcher.fetch(config1);
