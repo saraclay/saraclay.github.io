@@ -1,0 +1,25 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	line-height: 1;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size:60px;
+	text-align:center;
+
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size:30px;
+	text-align:center;
+}
+
+a {
+	color:#000;
+}
+
+a:hover {
+	color:#3b5998;
+};
