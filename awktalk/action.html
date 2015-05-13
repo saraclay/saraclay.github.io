@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AwkTalk | For Awkward Moments</title>
+	<link rel="image_src" href="/images/notify_better_image.png" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<meta name="author" content="Sara C.">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link href='main-style.css' rel='stylesheet' type='text/css'>
+  <style>
+    
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        loop: true,
+        responsiveFallback: 600
+      });
+		});
+
+	</script>
+  <link rel="stylesheet" href="../css/demo.css">
+  <script src="../js/demo.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">	
+      
+	  <div class="main">
+	    
+      <section class="page1">
+        <div class="page_container">
+          <h2>What are you doing right now?</h2>
+          <form name="action-select">
+          <select style="width:450px; font-family: 'Lato', sans-serif; font-size:50px; margin-top:20px;" name="menu" onChange="top.location.href=this.options[this.selectedIndex].value;" value="GO">
+          <option value="action.html">Select one...</option>
+          <option value="eating.html">Eating</option>
+          <option value="flirting.html">Flirting</option>
+          <option value="networking.html">Networking</option>
+          <option value="socializing.html">Socializing</option>
+          </select>
+        </form>
+
+          <a href="index.html"><img src="home-icon.png" style="margin-top:20%;"></a>
+      </section>
+    </div>
+  </div>
+  
+</body>
+</html>

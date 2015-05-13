@@ -1,0 +1,43 @@
+ <script type="text/javascript">
+        window.fbAsyncInit = function() {
+            FB.init({appId: '317329008329948', status: true, cookie: true, xfbml: true});
+
+            FB.Event.subscribe('auth.login', function(response) {
+                login();
+            });m
+            FB.Event.subscribe('auth.logout', function(response) {
+                logout();
+            });
+
+            FB.getLoginStatus(function(response) {
+                if (response.session) {
+                    greet();
+                }
+            });
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.type = 'text/javascript';
+            e.src = document.location.protocol +
+                '//connect.facebook.net/en_US/all.js';
+            e.async = true;
+            document.getElementById('fb-root').appendChild(e);
+        }());
+
+        function login(){
+            FB.api('/me', function(response) {
+                alert('You have successfully logged in, '+response.name+"!");
+            });
+        }
+        function logout(){
+            alert('You have successfully logged out!');
+        }
+        function greet(){
+            FB.api('/me', function(response) {
+                alert('Welcome, '+response.name+"!");
+            });
+        }
+
+
+    </script>
+<fb:login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></fb:login-button>

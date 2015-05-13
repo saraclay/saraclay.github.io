@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Waste No Mo'</title>
+<link rel="stylesheet" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+
+<script>
+/*
+</body>
+</html>
+*/
+</script>
+
+<style>
+body {
+	background: url(img/nature.jpg) no-repeat center center fixed;
+ 	 -webkit-background-size: cover;
+  	 -moz-background-size: cover;
+     -o-background-size: cover;
+  background-size: cover;
+  padding-top:5%;
+	} 
+</style>
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '383976198426118', // Set YOUR APP ID
+      appSecret : '2049c27bff675f04a6fcd204bfe3869c',
+      channelUrl : 'http://www-scf.usc.edu/~saraclay/', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+ 
+    FB.Event.subscribe('auth.authResponseChange', function(response) 
+    {
+     if (response.status === 'connected') 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
+        //SUCCESS
+    }    
+    else if (response.status === 'not_authorized') 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
+        //FAILED
+    } else 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Logged Out";
+        //UNKNOWN ERROR
+    }
+    }); 
+ 
+    };
+ 
+    function Login()
+    {
+ 
+        FB.login(function(response) {
+           if (response.authResponse) 
+           {
+                getUserInfo();
+                //Redirect();
+            } else 
+            {
+             console.log('User cancelled login or did not fully authorize.');
+            }
+         },{scope: 'email,user_photos,user_videos'});
+ 
+    }
+ 
+  function getUserInfo() {
+        FB.api('/me', function(response) {
+ 	  
+ 	  //Clean this up, redirect to next page	
+ 	  //Figure out why weird carrot is going
+      var str="Hey "+response.name+"! <br>";
+      	  str += "<a href='categories.html'><b>Let's get going >></b></a><br>"
+          /*str +="<b>Link: </b>"+response.link+"<br>";
+          str +="<b>Username:</b> "+response.username+"<br>";
+          str +="<b>id: </b>"+response.id+"<br>";
+          str +="<b>Email:</b> "+response.email+"<br>";
+          str +="<input type='button' value='Get Photo' onclick='getPhoto();'/>";
+          str +="<input type='button' value='Logout' onclick='Logout();'/>";*/
+          document.getElementById("status").innerHTML=str;
+ 
+    });
+    }
+
+    /*function getPhoto()
+    {
+      FB.api('/me/picture?type=normal', function(response) {
+ 
+          var str="<br/><b>Pic</b> : <img src='"+response.data.url+"'/>";
+          document.getElementById("status").innerHTML+=str;
+ 
+    });
+ 
+    }*/
+
+    /*function Redirect()
+    {
+        FB.Event.subscribe('auth.login', function(response) {
+        alert("Logged in.. Redirecting you now...");
+        window.location = "http://www-scf.usc.edu/~saraclay/waste-no-mo/main.html";
+    }
+ 
+
+    function Logout()
+    {
+        FB.logout(function(){document.location.reload();});
+    }*/
+ 
+  // Load the SDK asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "http://connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+ 
+</script>
+
+<script>
+$(document).ready(function() {
+  $("#loginLink").click(function( event ){
+    event.preventDefault();
+      $(".overlay").fadeToggle("fast");
+    });
+  
+  $(".overlayLink").click(function(event){
+    event.preventDefault();
+    var action = $(this).attr('data-action');
+    
+    $.get( "ajax/" + action, function( data ) {
+      $( ".login-content" ).html( data );
+    }); 
+    
+    $(".overlay").fadeToggle("fast");
+  });
+  
+  $(".close").click(function(){
+    $(".overlay").fadeToggle("fast");
+  });
+  
+  $(document).keyup(function(e) {
+    if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) { 
+      event.preventDefault();
+      $(".overlay").fadeToggle("fast");
+    }
+  });
+});
+</script>
+</head>
+
+<body>
+<h1>STOP WASTING GROCERIES</h1>
+<br><br>
+<center>
+<!--<a href="login.html" class="myButton">LET'S DO THIS</a>-->
+<a href="loginwith.php" id="loginLink" class="myButton">LET'S DO THIS</a>
+</center>
+
+<div class="overlay" style="display: none;">
+  <div class="login-wrapper">
+    <div class="login-content">
+      <a class="close">x</a>
+      <h3>Sign in</h3>
+      <br><br>
+      <div id="status">
+<img src="img/fb-sign.png" style="cursor:pointer;" onclick="Login();" onlogin="checkLoginState();"/>
+</div>
+      <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"</fb:login-button><br>-->
+     <!-- <form method="post" action="login_with_facebook.php"> -->
+        <!--Stupid Code
+        <a href="login_with_facebook.php" id="login_with_facebook">Login With Facebook</a>-->
+        <br>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
