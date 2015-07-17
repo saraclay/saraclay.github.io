@@ -10,8 +10,28 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="styles/animations.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
+
+<script>
+	$(window).scroll(function() {
+		$('#links').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$('#links').onClick(function() {
+		$(this).addClass("fadeIn");
+	});
+</script>
 
 
 <body>
@@ -22,10 +42,22 @@
 	</div>
 
 	<div id="links">
-		<a href="about.html">about</a> - <a href="work.html">work</a> - <a href="press.html">press</a> - <a href="contact.html">contact</a>
+		<a href="about.html">about</a> - <a href="work.html">work</a> - <a href="press.html">press</a> - <a href="contact.html"><u>contact</u></a>
 	</div>
 
-	
+	<div id="content">
+		Currently, I am interested in speaking opportunities and student startup advising, but I am more than happy to just chat over coffee as well.
+		<br><br>
+
+		<div id="contact" class="fadeIn">
+		<a href="http://www.twitter.com/saraclay15" target="_blank"><img src="img/twitter.png"></a>
+		<a href="http://www.linkedin.com/in/saraclay" target="_blank"><img src="img/linkedin.png"></a>
+		<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hi@saraclayton.co" target="_blank"><img src="img/mail.png"></a>
+		</div>
+
+		<br><br>
+
+	</div>
 
 </center>
 
