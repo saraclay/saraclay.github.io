@@ -13,18 +13,12 @@ body {
 }
 
 #links > a:before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
 }
 
 #about {
@@ -48,9 +42,10 @@ body {
 }
 
 #photos img {
-  height:80px;
-  width:110px;
+  max-width:100%;
+  height:auto;
 }
+
 
 #content {
   margin-top:2%;
@@ -65,12 +60,23 @@ body {
 
 #content > a {
 	position:relative;
-	color: #ccc;
+	color: #bbb;
   text-decoration: none;
 }
 
 #content a:visited {
-  color: #ccc;
+  color: #bbb;
+  text-decoration: none;
+}
+
+#content > a li {
+  position:relative;
+  color: #bbb;
+  text-decoration: none;
+}
+
+#content a:visited li {
+  color: #bbb;
   text-decoration: none;
 }
 
