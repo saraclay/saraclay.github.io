@@ -49,7 +49,7 @@ body {
 
 #content {
   margin-top:2%;
-  width: 50vw;
+  width: 61vw;
   font-size:17px;
   font-size: 2.5vh;
 }
@@ -96,4 +96,9 @@ body {
 #icons img {
   height:20px;
   width:20px;
+}
+
+#footer {
+  padding-top:1%;
+  font-size:12px;
 }
