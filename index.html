@@ -1,66 +1,73 @@
 <html>
 <head>
-	 <!-- title and meta -->
+	<!-- title and meta -->
+	<!--ADAPTED FROM CODEPEN BY THOMAS PODGRODZKI: http://codepen.io/Podgro/pen/XNJdJK -->
+
   	<meta charset="utf-8">
   	<meta content="width=device-width,initial-scale=1.0" name="viewport">
   	<meta content="description" name="Sara Clayton">
+  	<title>sara.coffee</title>
+  	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  	<link href='https://fonts.googleapis.com/css?family=Hind|Montserrat' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" type="text/css" href="styles/style.css">
   	<meta name="format-detection" content="telephone=no">
 
-	<title>Sara Clayton</title>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="flowtype.jQuery.js"></script>
-</head>
+  	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
+ <script>
+$(window).load(function(){
+  $('.effect').each(function(){
+    $(this).addClass('active');
+  })
+  $('.fade').addClass('active');
+})
 
-<body>
-	<p><a href="index.html"><img src="img/hatface.png"></a></p>
-		<div id="links">
-		<a href="about.html">about</a> 
-		<a href="press.html">press</a> 
-		<a href="talks.html">talks</a> 
-		<a href="http://www.techvolo.wordpress.com" target="_blank">words</a>
-		</div>
-	<br><br>
-	<div id="about">
-		<strong>Hi, I'm Sara. </strong>
-				<br>
-				<div id="description">I'm a product-focused marketer obsessed with mobile, design and developers.</div>
-	</div>
+$(document).ready(function(){
+  
+  $('.cta').click(function(){
+    $('html, body').animate({
+      scrollTop: $("#anchor").offset().top
+    }, 1000);
+  });
+  
+  $('.first').bind('mousewheel', function(e){
+    return false;
+  });
 
-<script src='https://pepper.swat.io/embed.js?ABC123'></script>
-
-<script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiIxMTExMTEiLCJpY29uIjoiYXZhdGFyIiwicHJvbm91biI6Im1lIiwiaW50cm9UZXh0IjpudWxsLCJjaGFubmVscyI6W1sidHdpdHRlciIsInNhcmFjbGF5MTUiLCJzb2NpYWwiXSxbImluc3RhZ3JhbSIsInNhcmFjbGF5MTUiLCJzb2NpYWwiXSxbImdpdGh1YiIsInd3dy5naXRodWIuY29tL3NhcmFjbGF5Iiwic29jaWFsIl0sWyJsaW5rZWRpbiIsImh0dHBzOi8vbGlua2VkaW4uY29tL2luL3NhcmFjbGF5Iiwic29jaWFsIl0sWyJzbmFwY2hhdCIsInNjbGF5dG9uMTUiLCJzb2NpYWwiXSxbImVtYWlsIiwiaGlAc2FyYWNsYXl0b24uY28iLCJjbGFzc2ljIl1dfQ=='></script>
-
-	<!--<div id="icons">
-	<a href="http://www.twitter.com/saraclay15" target="_blank"><img src="img/icon-twitter.png"></a>
-	<a href="https://www.linkedin.com/in/saraclay" target="_blank"><img src="img/icon-linkedin.png"></a>
-	<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hi@saraclayton.co" target="_blank"><img src="img/icon-email.png"></a>
-	<a href="http://vsco.co/saraclay/grid/1" target="_blank"><img src="img/icon-photo.png"></a>
-	</div>
-
-<div id="footer">
-Made with ❤ in Seattle
-</div>-->
-
-<script>
-/*google analytics*/
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-41732793-2', 'auto');
-  ga('send', 'pageview');
-
-/*flowtype code*/
-$('body').flowtype();
-$('about strong').flowtype();
-$('description').flowtype();
+});
 
 </script>
+
+
+</head>
+
+<body>
+<section class="first">
+  <div class="wrap">
+    <h1 class="effect">Hi, I'm Sara</h1>
+    <p class="fade">I'm a product-focused marketer obsessed with all things mobile, design and food.</p>
+    <p class="fade">
+    	<a href="http://twitter.com/saraclay15" target="_blank"><img class="icons" src="img/twitter-icon.png"></a>
+    	<a href="https://www.linkedin.com/in/saraclay" target="_blank"><img class="icons" src="img/linkedin-icon.png"></a>
+    	<a href="https://www.instagram.com/saraclay15/" target="_blank"><img class="icons" src="img/insta-icon.png"></a>
+    	<a href="https://www.behance.net/saraclay" target="_blank"><img class="icons" src="img/behance-icon.png"></a>
+    </p>
+  <!--  <a class="cta outline fade"><span>View more</span></a></div>
+</section>
+
+<section id="anchor">
+   <div class="wrap">
+    <h2>Lorem ipsum dolor sit amet</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nostrum quaerat recusandae quasi officia commodi mollitia, deleniti explicabo similique voluptatum quam accusamus exercitationem quo, ipsa, soluta laborum consequatur sequi quod.</p>
+  </div>
+</section>
+<section>
+   <div class="wrap">
+    <h2>Lorem ipsum dolor sit amet</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum ullam ratione necessitatibus numquam inventore nisi illum natus facilis distinctio. Ea velit corporis fugiat dolorem a ipsum tenetur, distinctio maiores.</p>
+  </div>
+-->
+</section>
 
 </body>
 
