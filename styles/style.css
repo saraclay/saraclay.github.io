@@ -21,7 +21,8 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-img {
+.icons {
+    width:50px;
     max-width: 100%;
     height: auto;
     padding:1%;
