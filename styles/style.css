@@ -23,9 +23,16 @@ h1, h2, h3 {
 
 .icons {
     width:50px;
-    max-width: 100%;
-    height: auto;
+    height:auto;
+    margin:auto;
     padding:1%;
+}
+
+@media screen and (max-width: 480px) {
+    .icons {
+        width:18%;
+        padding:1%;
+    }
 }
 
 /* H1 EFFECT */
