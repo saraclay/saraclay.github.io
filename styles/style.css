@@ -135,7 +135,7 @@ a.cta.outline {
   height: 100%;
   z-index: -1;
   width: 100%;
-  background: #222;
+  background: transparent;
   display: block;
   top: 0;
   left: 0;
@@ -149,6 +149,9 @@ a.cta.outline {
   transform-origin:right;
   -webkit-transform-origin:right;
 }
+
+/*doesn't pass accessibility on other browsers
+
 .cta.outline span {
   position: relative;
   z-index: 3;
@@ -171,9 +174,9 @@ a.cta.outline {
   transform-origin:left;
   -webkit-transform-origin:left;
 }
-.cta.outline:hover{
-  box-shadow: none;
-}
+
+*/
+
 .cta.outline:hover span{
   background-position: 0 0;
 }
@@ -183,9 +186,7 @@ a.cta.outline {
   transform: translateY(20px);
   transition: 0.6s all ease-out 2s;
 }
-a.fade {
-  transition: 0.6s all ease-out 2.6s;
-}
+
 .fade.active {
   transform: translateY(0);
   opacity: 1;
