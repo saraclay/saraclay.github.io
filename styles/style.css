@@ -44,9 +44,7 @@ hr {
   padding:0 5% 0 5%;
 }
 
-/*CTA STYLING*/
-
-a {
+  a {
   text-decoration:none;
   color:#000;
 }
@@ -55,6 +53,11 @@ a {
   text-decoration:underline;
   font-size:13pt;
 }
+
+
+}
+
+/*CTA STYLING
 
 .cta {
   font-size: 9pt;
@@ -92,6 +95,7 @@ a.cta.outline {
   transform-origin:right;
   -webkit-transform-origin:right;
 }
+*/
 
 /* H1 EFFECT */
 .effect {
