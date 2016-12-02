@@ -75,7 +75,7 @@ hr {
 a.cta.outline {
   background: transparent;
   border: 1px solid #222;
-}
+}*/
 
 .cta.outline:before {
   content: "";
@@ -95,7 +95,7 @@ a.cta.outline {
   transform-origin:right;
   -webkit-transform-origin:right;
 }
-*/
+
 
 /* H1 EFFECT */
 .effect {
