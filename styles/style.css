@@ -58,6 +58,7 @@ hr {
 
 #content {
   font-family:'Domine', serif;
+  max-width:650px;
   font-size:13pt;
   text-align:center;
   margin:0 auto;
@@ -74,9 +75,7 @@ hr {
 #content a {
   text-decoration:underline;
   font-size:13pt;
-}
-
-
+  max-width:700px;
 }
 
 /*CTA STYLING
