@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
   display: none;
 }
 
@@ -17,6 +17,7 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
+  font-family:'Domine', serif;
 }
 
 .lightbox {
@@ -27,6 +28,7 @@ body.lb-disable-scrolling {
   text-align: center;
   line-height: 0;
   font-weight: normal;
+  font-family:'Domine', serif;
 }
 
 .lightbox .lb-image {
@@ -78,7 +80,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(../img/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -195,7 +197,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/close.png) top right no-repeat;
+  background: url(../img/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
