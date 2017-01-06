@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024"><defs><linearGradient id="a" y1="512" x2="1024" y2="512" gradientUnits="userSpaceOnUse"><stop offset="1" stop-color="#f58a8c"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.99"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.96"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.92"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.85"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.76"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.65"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.51"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.36"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.19"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0.01"/><stop offset="1" stop-color="#f58a8c" stop-opacity="0"/></linearGradient></defs><title>copycat-logo</title><rect width="1024" height="1024" style="fill:url(#a)"/><path d="M741.1,277H279.9a70.3,70.3,0,0,0-70.1,70.1V808.4a70.3,70.3,0,0,0,70.1,70.1H741.1a70.3,70.3,0,0,0,70.1-70.1V347.1A70.3,70.3,0,0,0,741.1,277ZM729,726.1a70.3,70.3,0,0,1-70.1,70.1H362.1A70.3,70.3,0,0,1,292,726.1V429.4a70.3,70.3,0,0,1,70.1-70.1H658.9A70.3,70.3,0,0,1,729,429.4Z" style="fill:#f9f7e6"/><path d="M510.5,447A130.8,130.8,0,1,0,641.3,577.8,130.7,130.7,0,0,0,510.5,447Zm0,219.2a88.4,88.4,0,1,1,88.4-88.4A88.4,88.4,0,0,1,510.5,666.2Z" style="fill:#f9f7e6"/><path d="M326.6,178.1c5.5-9.5,14.5-9.5,20,0L407,282.7c5.5,9.5,1,17.3-10,17.3H276.3c-11,0-15.5-7.8-10-17.3Z" style="fill:none;stroke:#f9f7e6;stroke-miterlimit:10;stroke-width:24px"/><path d="M676,178.1c5.5-9.5,14.5-9.5,20,0l60.4,104.6c5.5,9.5,1,17.3-10,17.3H625.6c-11,0-15.5-7.8-10-17.3Z" style="fill:none;stroke:#f9f7e6;stroke-miterlimit:10;stroke-width:24px"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1725 780" style="enable-background:new 0 0 1725 780;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#F9F7E6;}
+	.st2{fill:none;stroke:#F9F7E6;stroke-width:24;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.4447" y1="391.5078" x2="1724.4447" y2="391.5078">
+		<stop  offset="1" style="stop-color:#F58A8C"/>
+		<stop  offset="1" style="stop-color:#F58A8C;stop-opacity:0.1413"/>
+		<stop  offset="1" style="stop-color:#F58A8C;stop-opacity:0"/>
+	</linearGradient>
+	<rect x="0.4" y="-120.5" class="st0" width="1724" height="1024"/>
+</g>
+<g id="Layer_3">
+	<path class="st1" d="M1027.4,222.8H697.3c-27.6,0-50.2,22.6-50.2,50.2v330.1c0,27.6,22.6,50.2,50.2,50.2h330.1
+		c27.6,0,50.2-22.6,50.2-50.2V273C1077.6,245.4,1055,222.8,1027.4,222.8z M1018.8,544.2c0,27.6-22.6,50.2-50.2,50.2H756.2
+		c-27.6,0-50.2-22.6-50.2-50.2V331.8c0-27.6,22.6-50.2,50.2-50.2h212.4c27.6,0,50.2,22.6,50.2,50.2V544.2z"/>
+	<path class="st1" d="M862.4,341.9c-51.7,0-93.6,41.9-93.6,93.6s41.9,93.6,93.6,93.6c51.7,0,93.6-41.9,93.6-93.6
+		S914.1,341.9,862.4,341.9z M862.4,498.8c-35,0-63.3-28.3-63.3-63.3s28.3-63.3,63.3-63.3c35,0,63.3,28.3,63.3,63.3
+		S897.4,498.8,862.4,498.8z"/>
+	<g>
+		<path class="st2" d="M728,156.9c5.5-9.5,14.5-9.5,20,0l37.5,65c5.5,9.5,1,17.3-10,17.3h-75c-11,0-15.5-7.8-10-17.3L728,156.9z"/>
+	</g>
+	<g>
+		<path class="st2" d="M978,156.9c5.5-9.5,14.5-9.5,20,0l37.5,65c5.5,9.5,1,17.3-10,17.3h-75c-11,0-15.5-7.8-10-17.3L978,156.9z"/>
+	</g>
+</g>
+</svg>
