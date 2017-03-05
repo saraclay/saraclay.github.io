@@ -165,12 +165,14 @@ h2 {
     float:none;
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
+    padding-bottom:20px;
   }
 
   .footer {
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     text-align:center;
+    padding-bottom:20px;
   }
 
 
