@@ -34,6 +34,10 @@ h2 {
   text-transform:uppercase;
 }
 
+h3 {
+  font-size:20px;
+}
+
 .nav {
   float:right;
   margin:17px 0;
@@ -69,10 +73,10 @@ h2 {
 
 .project {
   margin:auto;
-  margin:0 5%;
+  margin-left:10%;
+  margin-right: 5%;
   line-height: 1.5;
   font-weight: 300;
-  float:left;
   font-family: 'Nunito', sans-serif;
   font-size:17px;
   margin-bottom:20px;
@@ -107,7 +111,7 @@ h2 {
 
 .assets img {
   width:100%;
-  max-width:800px;
+  max-width:600px;
   margin-right:10px;
   margin-bottom:10px;
 }
@@ -137,6 +141,16 @@ h2 {
   text-decoration:none;
   color:#000;
 }
+
+
+@media screen and (max-width:1295px){
+
+
+  .project img {
+    max-width:75%;
+    margin-left:10%;
+    margin-right:5%;
+  }
 
 @media screen and (max-width:525px){
 
