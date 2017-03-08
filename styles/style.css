@@ -142,13 +142,14 @@ h3 {
   color:#000;
 }
 
-@media screen and (min-width:1205px) {
+@media screen and (min-width:1200px) {
 .project {
   margin-left:12%; 
   }
 
 h3 {
   text-align:center;
+  padding-right:20px;
 }
 
 }
