@@ -101,7 +101,7 @@ h3 {
 
 .assets {
   margin:auto;
-  padding:0 13%;
+  padding:0 20%;
   line-height: 1.5;
   font-weight: 300;
   text-align: center;
@@ -168,6 +168,12 @@ h3 {
   .content {
     width:100%;
     padding: 10px;
+    text-align:center;
+  }
+
+  .assets {
+    width:100%;
+    padding:10px;
     text-align:center;
   }
 
