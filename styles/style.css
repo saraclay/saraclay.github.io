@@ -105,7 +105,7 @@ hr {
 
 .assets {
   margin:auto;
-  padding:0 20%;
+  padding:0 25%;
   line-height: 1.5;
   font-weight: 300;
   text-align: center;
@@ -166,6 +166,11 @@ h3 {
     margin-left:10%;
     margin-right:5%;
   }
+
+  .assets {
+  margin:auto;
+  padding:0 15%;
+}
 
 @media screen and (max-width:525px){
 
