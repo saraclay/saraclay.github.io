@@ -32,6 +32,7 @@ h1 a {
 h2 {
   font-size:30px;
   text-transform:uppercase;
+  text-align:center;
 }
 
 h3 {
@@ -95,10 +96,10 @@ hr {
 
 .content {
   margin:auto;
-  padding:0 27%;
+  padding:0 25%;
   line-height: 1.5;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
   font-family: 'Nunito', sans-serif;
   font-size:17px;
 }
@@ -108,7 +109,7 @@ hr {
   padding:0 25%;
   line-height: 1.5;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
   font-family: 'Nunito', sans-serif;
   font-size:17px;
 }
@@ -177,13 +178,13 @@ h3 {
   .content {
     width:100%;
     padding: 10px;
-    text-align:center;
+    text-align:left;
   }
 
   .assets {
     width:100%;
     padding:10px;
-    text-align:center;
+    text-align:left;
   }
 
   .project img {
