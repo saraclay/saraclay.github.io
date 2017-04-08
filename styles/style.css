@@ -39,6 +39,15 @@ h3 {
   font-size:20px;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration:none;
+  color:#808080;
+}
+
 hr {
   width:15%;
 }
@@ -157,6 +166,12 @@ h3 {
   padding-right:20px;
 }
 
+.intro {
+  width:90%;
+  padding-left:10%;
+}
+
+
 }
 
 @media screen and (max-width:1200px){
@@ -171,7 +186,8 @@ h3 {
   .assets {
   margin:auto;
   padding:0 15%;
-}
+  }
+
 
 @media screen and (max-width:525px){
 
