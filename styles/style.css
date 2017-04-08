@@ -37,13 +37,15 @@ h2 {
 
 h3 {
   font-size:20px;
+  text-align:center;
+  padding-right:20px;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:focus,
-a:active {
+p a:link,
+p a:visited,
+p a:hover,
+p a:focus,
+p a:active {
   text-decoration:none;
   color:#808080;
 }
@@ -160,11 +162,6 @@ hr {
 .project {
   margin-left:12%; 
   }
-
-h3 {
-  text-align:center;
-  padding-right:20px;
-}
 
 .intro {
   width:90%;
