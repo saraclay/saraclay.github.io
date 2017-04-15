@@ -90,7 +90,7 @@ hr {
 .project {
   margin:auto;
   margin-left:5%;
-  margin-right: 5%;
+  margin-right:5%;
   line-height: 1.5;
   font-weight: 300;
   font-family: 'Nunito', sans-serif;
@@ -159,9 +159,9 @@ hr {
 }
 
 @media screen and (min-width:1300px) {
-.project {
+/*.project {
   margin-left:12%; 
-  }
+  }*/
 
 .intro {
   width:90%;
