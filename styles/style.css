@@ -115,6 +115,10 @@ hr {
   font-size:17px;
 }
 
+.content img {
+  height:200px;
+}
+
 .assets {
   margin:auto;
   padding:0 25%;
